@@ -1,0 +1,29 @@
+/* this is the keyframe code
+what it does is set the image timeframe */
+
+@keyframes divcolor{
+    0% {background-color: red;}
+    50% {background-color: yellow;
+         border-radius: 100%;}
+    100% {background-color: blue;}
+}
+
+/* this controls our element 'div' and what properties it has*/
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: divcolor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+    animation-timing-function: ease;
+    /* this line tells the code how to transition between each keyframe */
+
+    animation-direction: alternate;
+    /* this line tells the code how to loop the animation:display: 
+    ie: 
+    +should it loop from 0-100 repeatedly?
+    +should it loop from0-100 then 100-0 again?*/
+}

@@ -1,0 +1,33 @@
+/* this is the keyframe code
+what it does is set the image timeframe */
+
+@keyframes idle_html{ 
+    4% {transform: translateY(0);}
+    5% {transform: translateY(-10px);}
+    6% {transform: translateY(0);}
+}
+
+@keyframes hover_html {
+    0% {filter: invert(18%) sepia(96%) saturate(7219%) hue-rotate(1deg) brightness(100%) contrast(115%); transform: translateY(0);}
+    25% {filter: invert(55%) sepia(79%) saturate(1822%) hue-rotate(78deg) brightness(112%) contrast(129%);transform: translateY(0);}
+    50% {filter: invert(12%) sepia(98%) saturate(5311%) hue-rotate(246deg) brightness(89%) contrast(153%);transform: translateY(0);}
+    75% {filter: invert(55%) sepia(79%) saturate(1822%) hue-rotate(78deg) brightness(112%) contrast(129%);transform: translateY(0);}
+    100% {filter: invert(18%) sepia(96%) saturate(7219%) hue-rotate(1deg) brightness(100%) contrast(115%);transform: translateY(0);}
+}
+
+/* this controls our element 'img' and what properties it has*/
+
+img {
+    width: 100px;
+    position: absolute;
+    bottom: 1%;
+    animation-name: idle_html;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+img:hover {
+    animation-name: hover_html;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
