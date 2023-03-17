@@ -4,6 +4,8 @@ what it does is set the image timeframe */
 @keyframes idle_html{ 
     4% {transform: translateY(0);}
     5% {transform: translateY(-10px);}
+    5.75% {transform: translateY(0);}
+    5.8% {transform: translateY(-2px);}
     6% {transform: translateY(0);}
 }
 
